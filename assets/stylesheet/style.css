@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Custom Styles Start From Here */
+
+/* My Resets */
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+input,
+button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    font-family: 'Noto Sans' , sans-serif;
+    cursor: pointer;
+ }
+ img {
+    width: 100%;
+ }
+
+ /* Variables */
+ :root {
+    --primary: #60A4FF;
+    --seconary: #FF5D7D;
+    --tertiary:#66E0F7;
+ }
+
+ /* Containers */
+ .container-80 {
+    max-width: 80%;
+    margin: 0 auto;
+ }
+ /* Flex */
+ .flex {
+    display: flex;
+ }
+ .align-center {
+    align-items: center;
+ }
+.justify-between {
+    justify-content: space-between;
+}
+
+ /* Buttons */
+.btn figure {
+    width: 20px;
+    margin-right: 5px;
+}
+
+ /* Header Styles */
+ .header {
+    padding: 20px;
+ }
+ .brand-icon {
+    width: 75px;
+    margin-right: 5px;
+ }
+ .brand-name strong {
+    font-size: 24px;
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--primary);
+ }
+ .brand-name strong span {
+    color: var(--tertiary);
+ }
+ .header input {
+    background-color: rgba(200, 200, 200, .5);
+    border-radius: 10px;
+    padding-left: 10px;
+ }
+ .header ::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+ }
+ .nav-menu a {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 40px;
+    color: var(--primary);
+ }
+ .nav-menu-item-active a {
+    color: #FF5D7D;
+ }
