@@ -50,6 +50,7 @@ table {
 
 /* My Resets */
 body {
+    max-width: 1370px;
     font-family: 'Noto Sans', sans-serif;
 }
 *,
@@ -69,6 +70,8 @@ button {
     font-family: 'Noto Sans' , sans-serif;
     cursor: pointer;
  }
+
+ /* Images */
  img {
     width: 100%;
  }
@@ -95,6 +98,9 @@ button {
 .justify-between {
     justify-content: space-between;
 }
+.flex-30 {
+    flex: 0 1 30%;
+}
 
  /* Buttons */
 .btn figure {
@@ -104,7 +110,7 @@ button {
 
  /* Header Styles */
  .header {
-    padding: 20px;
+    padding-top: 10px;
  }
  .brand-icon {
     width: 75px;
@@ -119,19 +125,23 @@ button {
  .brand-name strong span {
     color: var(--tertiary);
  }
- .header input {
-    background-color: rgba(200, 200, 200, .5);
+ .header .search {
+    background: linear-gradient(rgba(200, 200, 200, .3),rgba(200, 200, 200, .3)), 
+    url(../media/icons/search-interface-symbol.png)95% 50% no-repeat;
+    background-size: auto 50%;
     border-radius: 10px;
-    padding-left: 10px;
+    padding: 2px 10px;
+    font-size: 14px;
+    color: rgba(100, 100, 100, 1) ;
  }
  .header ::placeholder {
     font-size: 12px;
     font-weight: 500;
+    color: rgba(150, 150, 150, 1) ;
  }
  .nav-menu a {
     font-size: 14px;
     font-weight: 600;
-    margin-left: 40px;
     color: var(--primary);
  }
  .nav-menu-item-active a {
