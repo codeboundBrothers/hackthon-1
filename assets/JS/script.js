@@ -1,8 +1,13 @@
-// let write = document.querySelector("");
-let container = document.querySelector("");
+let container = document.getElementById("article");
+console.log(container);
+let form = document.querySelector("form")
+console.log(form);
+
+let arr = [{title:"anish",description:"shfd",createdAt:"05/02/2023",id:1},{title:"anish",description:"shfd",createdAt:"05/02/2023",id:1},{title:"anish",description:"shfd",createdAt:"05/02/2023",id:1},{title:"anish",description:"shfd",createdAt:"05/02/2023",id:1},{title:"anish",description:"shfd",createdAt:"05/02/2023",id:1},{title:"anish",description:"shfd",createdAt:"05/02/2023",id:1},{title:"anish",description:"shfd",createdAt:"05/02/2023",id:1}];
 
 // write button
-let write = document.querySelector("write");
+let write = document.getElementById("name");
+console.log(write);
 
 write.addEventListener("click", () => {
     // let form =  document.createElement("form");
@@ -24,33 +29,29 @@ write.addEventListener("click", () => {
 });
 
 // submit button Anish
-let data = [];
- 
+
 form.addEventListener("submit" , () => {
-    form.style.display
-    container.innerHTML = null;
+    // container.innerHTML = null;
+    console.log(arr);
     let obj = {};
-    obj.title = title.target.value;
-    obj.description = description.target.value;
-    obj.author = author.target.value;
-    obj.createdAt = createdAt.target.value;
-    obj.title = title.target.value;
-    data.push(obj);
-    createUi(data);
+    obj.title = title.value;
+    obj.description = description.value;
+    obj.author = author.value;
+    obj.createdAt = createdAt.value;
+    obj.title = title.value;
+    arr.push(obj);              
+    createUi(arr);
 });
 
 // search button Anish 
-let search = document.querySelector("search");
+let search = document.getElementById("search");
+console.log(search)
 
-search.addEventListener("keyup" ,() => {
-    let filterdata = data.filter(el => el.title.toLowerCase.includes(search.value));
+search.addEventListener("input" ,(event) => {
+    let filterdata = data.filter(el => el.title.toLowerCase.includes(event.target.value.toLowerCase()));
     createUi(filterdata);
-
+    container.innerHTML = null;
 })
-
-// data 
-// let data = [{title:"anish",author:"AK",description:"shfd",createdAt:"05/02/2023",id:1},{title:"anish",author:"AK",description:"shfd",createdAt:"05/02/2023",id:2},{title:"anish",author:"AK",description:"shfd",createdAt:"05/02/2023",id:3},{title:"anish",author:"AK",description:"shfd",createdAt:"05/02/2023",id:4},{title:"anish",author:"AK",description:"shfd",createdAt:"05/02/2023",id:5},{title:"anish",author:"AK",description:"shfd",createdAt:"05/02/2023",id:6},{title:"anish",author:"AK",description:"shfd",createdAt:"05/02/2023",id:7}];
-
 
 
 // create UI ANISH 
@@ -64,18 +65,16 @@ function createUi(data){
         p.textContent = el.description;
         let span = document.createElement("span");
         span.textContent = el.createdAt;
+        let button = document.createElement("button");
+        button.textContent = "delete";
         el.id = i;
-        div.append(h2,h3,p,span);
+        container.append(h2,h3,p,span);
     })
 };
 
-createUi(data);
+createUi(arr);
 
 // delete article Anish 
 
-// delete.addEventListener("click" ,() =>{
-//     container.innerHTML = null;
-//     arr.splice(id,1);
-//     createUi(data)
-// });
+
 

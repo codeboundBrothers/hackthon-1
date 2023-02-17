@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  
     <!-- Header -->
     <header  class="header">
         <div class="container-80 flex align-center justify-between">
@@ -28,8 +29,8 @@
                 </p>
                 
             </div>
-            <input type="text" placeholder="Search" class="search">
-            <button class="btn write flex align-center">
+            <input type="text" placeholder="Search" id="search">
+            <button class="btn write flex align-center" id="name">
                 <figure>
                     <img src="./assets/media/icons/write.png">
                 </figure>
@@ -55,8 +56,18 @@
     </header>
     <!-- Main -->
     <main>
-        <form action="index.html" method="post" class="form"></form>
-        <article class="article-container"></article>
+        <form class="form">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            
+        </form>
+        <div id="article">
+
+        </div>
     </main>
+    <script src="./assets/JS/script.js"></script>
+    
 </body>
 </html>
