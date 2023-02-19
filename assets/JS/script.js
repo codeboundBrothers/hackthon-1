@@ -1,7 +1,8 @@
-let gotoLogIn_btn = document.querySelector('.log-in-btn');
+let gotoLogIn_btn = document.querySelector('.passive-btn');
 let form = document.getElementById('signup');
 let login_form = document.querySelector('#login');
 let todos = document.querySelector('.flex');
+let signupSec = document.querySelector('.form');
 
 // For Registration 
 
@@ -38,7 +39,7 @@ form.addEventListener('submit', async (e) => {
 })
 
 gotoLogIn_btn.addEventListener('click', () => {
-    form.style.display = 'none';
+    signupSec.style.display = 'none';
     login_form.style.display = 'block';
 })
 
