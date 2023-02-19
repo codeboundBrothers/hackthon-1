@@ -1,6 +1,7 @@
 let gotoLogIn_btn = document.querySelector('.log-in-btn');
 let form = document.getElementById('signup');
 let login_form = document.querySelector('#login');
+let todos = document.querySelector('.flex');
 
 // For Registration 
 
@@ -48,11 +49,11 @@ login_form.addEventListener('submit', async (e) => {
     try {
         let obj = {
             username : login_form.username2.value,
-            password : login_form.username2.value
+            password : login_form.password2.value
         }
 
         let fetched_data = await fetch('https://reqres.in/api/users', {
-            method : 'GET',
+            method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'
             },
@@ -60,7 +61,14 @@ login_form.addEventListener('submit', async (e) => {
         });
 
         let data = await fetched_data.json();
-        console.log(data);
+
+        if(data.accessToken){
+            alert('Login Successfull!!');
+            todos.style.display = 'block';
+        }
+        else{
+            alert('Wrong Credentials!!');
+        }
 
 
     } catch (error) {
