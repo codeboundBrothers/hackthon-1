@@ -21,64 +21,78 @@
     <!-- Main -->
     <main>
         <!-- Registration form-->
-        <form id="signup">
-            <fieldset class="container">
-                <h1>Sign Up</h1>
-                <div>
-                    <label for="name"><b>Name</b></label>
-                    <input type="text" placeholder="Enter your name" required id="name">
-                </div>
-                <div class="flex">
-                    <label for="username"><b>Username</b></label>
-                    <input type="text" name="username" placeholder="Enter Username" required id="username">
-                </div>
-                <div class="flex">
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required id="email">
-                </div>
-                <div class="flex">
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" required id="password">
-                </div>
-                <p>By creating an account you agree to our <a href="#">Terms & Conditions.</a></p>
-                <input type="submit" class=".sign-up-btn">
-                <div>
-                    <span>Already have an account?</span>
-                    <button class="log-in-btn">Log-In<button>
-                </div>
-              </fieldset>
-          </form>
+        <section class="form">
+            <form>
+                <fieldset class="container flex flex-column">
+                    <h1>Sign Up</h1>
+                    <div class="flex align-center justify-between">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" name="username" placeholder="Enter Username" required id="username" class="flex-75">
+                    </div>
+                    <div class="flex align-center justify-between">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required id="email" class="flex-75">
+                    </div>
+                    <div class="flex align-center justify-between">
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required id="password" class="flex-75">
+                    </div>
+                    <p>By creating an account you agree to our <a href="#">Terms & Conditions.</a></p>
+                    <input type="submit" class="btn active-btn" value="Sign Up">
+                  </fieldset>
+            </form>
+            <div>
+                <span>Already have an account?</span>
+                <button class="btn passive-btn">Log-In<button>
+            </div>
+        </section>
           <!-- Log-In Form -->
-          <form id="login" class="none">
-            <fieldset class="container">
-                <h1>Log In</h1>
-                <label for="username"><b>Username</b></label>
-                <input type="text" name="username" placeholder="Enter Username" required id="username2">
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required id="password2">
-                <button type="submit" class="btn">Log-In</button>
-                <div>
-                    <span>Have'nt joined yet?</span>
-                    <button class="sign-up-btn">Sign up<button>
-                </div>
-              </fieldset>
-          </form>
+        <section class="form">
+            <form id="login" class="none">
+                <fieldset class="container flex flex-column">
+                    <h2>Log In</h2>
+                    <div class="flex align-center justify-between">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" name="username" placeholder="Enter Username" required id="username" class="flex-75">
+                    </div>
+                    <div class="flex align-center justify-between">
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required id="password" class="flex-75">
+                    </div>
+                    <input type="submit" class="btn active-btn" value="Log In">
+                </fieldset>
+              </form>
+            <div>
+                <span>Have'nt joined yet?</span>
+                <button class="btn passive-btn">Sign up<button>
+            </div>
+        </section>
 
           <!-- Fetch To-do Button -->
-          <button class="fetch none">Fetch To-Dos</button>
-          <button class="sort-ascending none">Sort(A to Z)</button>
-          <button class="sort-desc none">Sort(Z to A)</button>
-          <button class="filter-completed none">Completed ToDos</button>
-          <button class="filter-pending none">Pending ToDos</button>
-          <div class="todo-container none"></div>
+
+          <section class="flex none">
+            <aside class="button-container flex flex-column flex-25">
+                <button class="fetch-btn btn">Fetch To-Dos</button>
+                <button class="sort-ascending btn">Sort(A to Z)</button>
+                <button class="sort-desc btn">Sort(Z to A)</button>
+                <button class="filter-completed btn">Completed ToDos</button>
+                <button class="filter-pending btn">Pending ToDos</button>
+            </aside>
+            <section class="todo-container none flex-75"></section>
+          </section>
     </main>
 
     <!-- Footer -->
     <footer>
 
     </footer>
-    <script src="./assets/JS/index.js"></script>
-    <script src="./assets/JS/script.js"></script>
+
+            <!-- Attaching Javascript Files -->
+            <script src="./assets/JS/index.js"></script>
+            <script src="./assets/JS/script.js"></script>
+
+   </div>
+
 
 
 
