@@ -1,3 +1,51 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 /* Adding Custom Styles */
 /* Desktop First Approach */
@@ -14,15 +62,129 @@ html {
 a {
     text-decoration: none;
 }
-
+button,
+input,
+select,
+textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    font-weight: 600;
+    border-radius: .25rem;
+}
 /* General Styles */
 body {
     font-family: 'Raleway', sans-serif;
     max-width: 1370px;
     width: 100%;
     line-height: 1.5;
+    background: linear-gradient(90deg, rgba(240, 85, 65, 0.37),
+                                    rgba(149, 184, 22, 0.3));
+}
+/* containers */
+.container-80 {
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-75 {
+    flex: 0 1 75%;
+}
+.flex-100 {
+    flex: 0 1 100%;
+}
+.center {
+    justify-content: center;
+    align-items: center;
 }
 
 .none {
     display: none;
 }
+
+/* Headings */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    align-self: center;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    align-self: center;
+}
+
+/* Text */
+p, span{
+    font-size: .8rem;
+    margin: 1rem 0;
+    display: inline-block;
+}
+b {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 48, 0, 0.5),
+                -1px -1px 1px rgba(0, 48, 0, 0.5);
+}
+.btn:hover {
+    color: green;
+    background-color: white;
+    transition: all 300ms ease-in-out;
+}
+.passive-btn {
+    padding: .5rem;
+    border-radius: .25rem;
+    font-size: .75rem;
+}
+
+/* Forms */
+form {
+width: 50%;
+margin: 2rem auto;
+padding: 3rem;
+background: linear-gradient(90deg, rgba(240, 85, 65, 0.37),
+                                    rgba(149, 184, 22, 0.3));
+}
+form input{
+    padding: .5rem;
+    margin: 1rem;
+}
+
+/* ToDo List */
+.button-container, .todo-container {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+
+
