@@ -17,12 +17,6 @@
 
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Attaching Javascript Files -->
-        <script src="./assets/JS/index.js"></script>
-        <script src="./assets/JS/script.js"></script>
-    </header>
 
     <!-- Main -->
     <main>
@@ -30,6 +24,10 @@
         <form id="signup">
             <fieldset class="container">
                 <h1>Sign Up</h1>
+                <div>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter your name" required id="name">
+                </div>
                 <div class="flex">
                     <label for="username"><b>Username</b></label>
                     <input type="text" name="username" placeholder="Enter Username" required id="username">
@@ -43,7 +41,7 @@
                     <input type="password" placeholder="Enter Password" name="password" required id="password">
                 </div>
                 <p>By creating an account you agree to our <a href="#">Terms & Conditions.</a></p>
-                <button type="submit" class="btn">Sign Up</button>
+                <input type="submit" class=".sign-up-btn">
                 <div>
                     <span>Already have an account?</span>
                     <button class="log-in-btn">Log-In<button>
@@ -55,9 +53,9 @@
             <fieldset class="container">
                 <h1>Log In</h1>
                 <label for="username"><b>Username</b></label>
-                <input type="text" name="username" placeholder="Enter Username" required id="username">
+                <input type="text" name="username" placeholder="Enter Username" required id="username2">
                 <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required id="password">
+                <input type="password" placeholder="Enter Password" name="password" required id="password2">
                 <button type="submit" class="btn">Log-In</button>
                 <div>
                     <span>Have'nt joined yet?</span>
@@ -79,6 +77,8 @@
     <footer>
 
     </footer>
+    <script src="./assets/JS/index.js"></script>
+    <script src="./assets/JS/script.js"></script>
 
 
 
