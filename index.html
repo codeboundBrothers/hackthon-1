@@ -25,10 +25,14 @@
     <main>
         <!-- Registration form-->
         <section class="form">
-            <form>
+            <form id = "signup">
                 <fieldset class="container flex flex-column">
                     <h1>Sign Up</h1>
 
+                    <div class="flex align-center justify-between">
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" name="name" placeholder="Enter name" required id="name" class="flex-75">
+                    </div>
                     <div class="flex align-center justify-between">
                         <label for="username"><b>Username</b></label>
                         <input type="text" name="username" placeholder="Enter Username" required id="username"
@@ -76,33 +80,22 @@
             </div>
         </section>
 
-        <!-- Fetch To-do Button -->
-
+        <!-- Main section -->
         <section class="flex none">
-            <aside class="button-container flex flex-column flex-25">
-                <button class="fetch-btn btn">Fetch To-Dos</button>
-                <button class="sort-ascending btn">Sort(A to Z)</button>
-                <button class="sort-desc btn">Sort(Z to A)</button>
-                <button class="filter-completed btn">Completed ToDos</button>
-                <button class="filter-pending btn">Pending ToDos</button>
-            </aside>
-            <section class="todo-container none flex-75"></section>
+        <aside class="button-container flex flex-column flex-25">
+            <button class="fetch-btn btn">Fetch To-Dos</button>
+            <button class="sort-ascending btn">Sort(A to Z)</button>
+            <button class="sort-desc btn">Sort(Z to A)</button>
+            <button class="filter-completed btn">Completed ToDos</button>
+            <button class="filter-pending btn">Pending ToDos</button>
+        </aside>
+        <section class="todo-container none flex-75"></section>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-
-    </footer>
     <!-- Attaching Javascript Files -->
     <script src="./assets/JS/index.js"></script>
     <script src="./assets/JS/script.js"></script>
-
-    </div>
-
-
-
-
+   </div>
 </body>
 
 </html>
