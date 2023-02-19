@@ -185,6 +185,21 @@ background: linear-gradient(90deg, rgba(240, 85, 65, 0.37),
     margin-top: 2rem;
     padding: 2rem;
 }
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card p {
+    margin: 0px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.card span{
+    font-size: 24px;
+}
 
 
 
