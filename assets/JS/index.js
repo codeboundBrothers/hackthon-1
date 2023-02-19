@@ -19,7 +19,7 @@ function createUi(data){
         input.type = "checkbox";
         input.checked = todo.completed;
         p.innerText = todo.title;
-        div.append(p,input,span);
+        div.append(span,p,input);
         root.append(div);
     })
 };
