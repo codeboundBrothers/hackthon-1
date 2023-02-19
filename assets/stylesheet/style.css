@@ -168,14 +168,14 @@ b {
 }
 
 /* Forms */
-form {
-width: 50%;
+.form {
+width: 40%;
 margin: 2rem auto;
 padding: 3rem;
 background: linear-gradient(90deg, rgba(240, 85, 65, 0.37),
                                     rgba(149, 184, 22, 0.3));
 }
-form input{
+.form input{
     padding: .5rem;
     margin: 1rem;
 }
