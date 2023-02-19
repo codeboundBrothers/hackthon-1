@@ -10,6 +10,8 @@ let root =  document.querySelector(".todo-container");
 function createUi(data){
     root.innerHTML = "";
     data.forEach(todo => {
+        let div = document.createElement("div");
+        div.classList.add("card");
         let p = document.createElement("p");
         let span = document.createElement("span");
         span.innerText = todo.id;
@@ -17,7 +19,8 @@ function createUi(data){
         input.type = "checkbox";
         input.checked = todo.completed;
         p.innerText = todo.title;
-        root.append(p,input,span);
+        card.append(p,input,span);
+        root.append(card);
     })
 };
 
@@ -45,7 +48,7 @@ asc.addEventListener("click", () => {
 // descending task 
 dsc.addEventListener("click" , () => {
     load().then(val => val.sort((a,b) => (a.title > b.title) ? -1 :((b.title > a.title) ? 1 : 0))).then(val => createUi(val));
-})
+});
 
 // for show data 
 show.addEventListener("click", () => {
