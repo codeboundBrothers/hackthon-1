@@ -24,26 +24,26 @@
     <main>
         <!-- Registration form-->
         <section class="form">
-            <form id = "signup">
+            <form id = "signup" method="post" action="index.html">
                 <fieldset class="container flex flex-column">
                     <h1>Sign Up</h1>
 
                     <div class="flex align-center justify-between">
                         <label for="name"><b>Name</b></label>
-                        <input type="text" name="name" placeholder="Enter name" required id="name" class="flex-75">
+                        <input type="text" name="name" placeholder="Enter name"  id="name" class="flex-75">
                     </div>
                     <div class="flex align-center justify-between">
                         <label for="username"><b>Username</b></label>
-                        <input type="text" name="username" placeholder="Enter Username" required id="username"
+                        <input type="text" name="username" placeholder="Enter Username"  id="username"
                             class="flex-75">
                     </div>
                     <div class="flex align-center justify-between">
                         <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required id="email" class="flex-75">
+                        <input type="text" placeholder="Enter Email" name="email"  id="email" class="flex-75">
                     </div>
                     <div class="flex align-center justify-between">
                         <label for="password"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="password" required id="password"
+                        <input type="password" placeholder="Enter Password" name="password"  id="password"
                             class="flex-75">
                     </div>
                     <p>By creating an account you agree to our <a href="#">Terms & Conditions.</a></p>
@@ -57,12 +57,12 @@
         </section>
         <!-- Log-In Form -->
         <section id="login" class="form none">
-            <form>
+            <form method="post" action="index.html">
                 <fieldset class="container flex flex-column">
                     <h2>Log In</h2>
                     <div class="flex align-center justify-between">
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" name="username" placeholder="Enter Username" required id="username2" class="flex-75">
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email" name="email"  id="email" class="flex-75">
                     </div>
                     <div class="flex align-center justify-between">
                         <label for="password"><b>Password</b></label>
@@ -78,7 +78,7 @@
         </section>
 
         <!-- Main section -->
-        <section class="flex none">
+        <section class="flex none" id="todos-btn">
             <aside class="button-container flex flex-column flex-25">
                 <button class="fetch-btn btn">Fetch To-Dos</button>
                 <button class="sort-ascending btn">Sort(A to Z)</button>
