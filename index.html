@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +12,13 @@
     <!-- Font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/stylesheet/style.css">
 
 </head>
+
 <body>
 
     <!-- Main -->
@@ -25,9 +28,11 @@
             <form>
                 <fieldset class="container flex flex-column">
                     <h1>Sign Up</h1>
+
                     <div class="flex align-center justify-between">
                         <label for="username"><b>Username</b></label>
-                        <input type="text" name="username" placeholder="Enter Username" required id="username" class="flex-75">
+                        <input type="text" name="username" placeholder="Enter Username" required id="username"
+                            class="flex-75">
                     </div>
                     <div class="flex align-center justify-between">
                         <label for="email"><b>Email</b></label>
@@ -35,42 +40,45 @@
                     </div>
                     <div class="flex align-center justify-between">
                         <label for="password"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="password" required id="password" class="flex-75">
+                        <input type="password" placeholder="Enter Password" name="password" required id="password"
+                            class="flex-75">
                     </div>
                     <p>By creating an account you agree to our <a href="#">Terms & Conditions.</a></p>
                     <input type="submit" class="btn active-btn" value="Sign Up">
-                  </fieldset>
+                </fieldset>
             </form>
             <div>
                 <span>Already have an account?</span>
                 <button class="btn passive-btn">Log-In<button>
             </div>
         </section>
-          <!-- Log-In Form -->
+        <!-- Log-In Form -->
         <section class="form none">
             <form id="login">
                 <fieldset class="container flex flex-column">
                     <h2>Log In</h2>
                     <div class="flex align-center justify-between">
                         <label for="username"><b>Username</b></label>
-                        <input type="text" name="username" placeholder="Enter Username" required id="username" class="flex-75">
+                        <input type="text" name="username" placeholder="Enter Username" required id="username"
+                            class="flex-75">
                     </div>
                     <div class="flex align-center justify-between">
                         <label for="password"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="password" required id="password" class="flex-75">
+                        <input type="password" placeholder="Enter Password" name="password" required id="password"
+                            class="flex-75">
                     </div>
                     <input type="submit" class="btn active-btn" value="Log In">
                 </fieldset>
-              </form>
+            </form>
             <div>
                 <span>Have'nt joined yet?</span>
                 <button class="btn passive-btn">Sign up<button>
             </div>
         </section>
 
-          <!-- Fetch To-do Button -->
+        <!-- Fetch To-do Button -->
 
-          <section class="flex none">
+        <section class="flex none">
             <aside class="button-container flex flex-column flex-25">
                 <button class="fetch-btn btn">Fetch To-Dos</button>
                 <button class="sort-ascending btn">Sort(A to Z)</button>
@@ -79,22 +87,22 @@
                 <button class="filter-pending btn">Pending ToDos</button>
             </aside>
             <section class="todo-container none flex-75"></section>
-          </section>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
 
     </footer>
+    <!-- Attaching Javascript Files -->
+    <script src="./assets/JS/index.js"></script>
+    <script src="./assets/JS/script.js"></script>
 
-            <!-- Attaching Javascript Files -->
-            <script src="./assets/JS/index.js"></script>
-            <script src="./assets/JS/script.js"></script>
-
-   </div>
+    </div>
 
 
 
 
 </body>
+
 </html>
