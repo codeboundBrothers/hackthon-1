@@ -73,6 +73,7 @@ textarea {
     font-family: 'Raleway', sans-serif;
     padding: 0;
     font-weight: 600;
+    border-radius: .25rem;
 }
 /* General Styles */
 body {
@@ -80,36 +81,14 @@ body {
     max-width: 1370px;
     width: 100%;
     line-height: 1.5;
-}
-
-.none {
-    display: none;
-}
-
-/* Headings */
-h1{
-    font-size: 32px;
-    font-weight: 600;
-}
-
-/* Text */
-p, span{
-    font-size: .8rem;
-}
-
-/* Forms */
-form {
-width: 40%;
-margin: 0 auto;
-padding: 3rem;
-background: linear-gradient(90deg, rgba(240, 85, 65, 0.37),
+    background: linear-gradient(90deg, rgba(240, 85, 65, 0.37),
                                     rgba(149, 184, 22, 0.3));
 }
-form input{
-    padding: .5rem;
-    margin: 1rem;
+/* containers */
+.container-80 {
+    max-width: 80%;
+    margin: 0 auto;
 }
-
 /* Flex */
 .flex {
     display: flex;
@@ -126,41 +105,86 @@ form input{
 .align-center {
     align-items: center;
 }
-.wrap {
-    flex-wrap: wrap;
+.flex-25 {
+    flex: 0 1 25%;
 }
-.flex-20 {
-    flex: 0 1 20%;
+.flex-75 {
+    flex: 0 1 75%;
 }
-.flex-24 {
-    flex: 0 1 24%;
-}
-.flex-30 {
-    flex: 0 1 30%;
-}
-.flex-32 {
-    flex: 0 1 31.5%;
-}
-.flex-34 {
-    flex: 0 1 34%;
-}
-.flex-40 {
-    flex: 0 1 40%;
-}
-.flex-49 {
-    flex: 0 1 49%;
-}
-.flex-60 {
-    flex: 0 1 60%;
-}
-.flex-64 {
-    flex: 0 1 64%;
-}
-.flex-80 {
-    flex: 0 1 80%;
+.flex-100 {
+    flex: 0 1 100%;
 }
 .center {
     justify-content: center;
     align-items: center;
 }
+
+.none {
+    display: none;
+}
+
+/* Headings */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    align-self: center;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    align-self: center;
+}
+
+/* Text */
+p, span{
+    font-size: .8rem;
+    margin: 1rem 0;
+    display: inline-block;
+}
+b {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 48, 0, 0.5),
+                -1px -1px 1px rgba(0, 48, 0, 0.5);
+}
+.btn:hover {
+    color: green;
+    background-color: white;
+    transition: all 300ms ease-in-out;
+}
+.passive-btn {
+    padding: .5rem;
+    border-radius: .25rem;
+    font-size: .75rem;
+}
+
+/* Forms */
+form {
+width: 50%;
+margin: 2rem auto;
+padding: 3rem;
+background: linear-gradient(90deg, rgba(240, 85, 65, 0.37),
+                                    rgba(149, 184, 22, 0.3));
+}
+form input{
+    padding: .5rem;
+    margin: 1rem;
+}
+
+/* ToDo List */
+.button-container, .todo-container {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+
 
