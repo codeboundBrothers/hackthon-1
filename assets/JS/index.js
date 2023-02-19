@@ -1,5 +1,5 @@
 // getting elements 
-let show = document.querySelector(".fetch");
+let show = document.querySelector(".fetch-btn");
 let completed = document.querySelector(".filter-completed");
 let pending = document.querySelector(".filter-pending");
 let asc = document.querySelector(".sort-ascending");
@@ -46,9 +46,6 @@ asc.addEventListener("click", () => {
 dsc.addEventListener("click" , () => {
     load().then(val => val.sort((a,b) => (a.title > b.title) ? -1 :((b.title > a.title) ? 1 : 0))).then(val => createUi(val));
 })
-
-
-
 
 // for show data 
 show.addEventListener("click", () => {
