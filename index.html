@@ -30,17 +30,23 @@
         <form id="signup">
             <fieldset class="container">
                 <h1>Sign Up</h1>
-                <label for="username"><b>Username</b></label>
-                <input type="text" name="username" placeholder="Enter Username" required id="username">
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required id="email">
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required id="password">
+                <div class="flex">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" name="username" placeholder="Enter Username" required id="username">
+                </div>
+                <div class="flex">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required id="email">
+                </div>
+                <div class="flex">
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required id="password">
+                </div>
                 <p>By creating an account you agree to our <a href="#">Terms & Conditions.</a></p>
                 <button type="submit" class="btn">Sign Up</button>
                 <div>
                     <span>Already have an account?</span>
-                    <a href="">Log-In</a>
+                    <button class="log-in-btn">Log-In<button>
                 </div>
               </fieldset>
           </form>
@@ -55,7 +61,7 @@
                 <button type="submit" class="btn">Log-In</button>
                 <div>
                     <span>Have'nt joined yet?</span>
-                    <a href="">Sign up</a>
+                    <button class="sign-up-btn">Sign up<button>
                 </div>
               </fieldset>
           </form>
