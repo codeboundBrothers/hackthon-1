@@ -1,0 +1,28 @@
+
+/* Adding Custom Styles */
+/* Desktop First Approach */
+
+/* My Resets */
+html {
+    font-size: 16px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1370px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.none {
+    display: none;
+}

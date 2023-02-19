@@ -4,10 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Title of the page -->
+    <title>To-Do App</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eec6d21a06.js" crossorigin="anonymous"></script>
+    <!-- Font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+
 </head>
 <body>
-    <script src="./assets/JS/index.js"></script>
-    <script src="./assets/JS/script.js"></script>
+    <!-- Header -->
+    <header>
+        <!-- Attaching Javascript Files -->
+        <script src="./assets/JS/index.js"></script>
+        <script src="./assets/JS/script.js"></script>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Registration form-->
+        <form>
+            <fieldset class="container">
+                <h1>Sign Up</h1>
+                <label for="username"><b>Username</b></label>
+                <input type="text" name="username" placeholder="Enter Username" required id="username">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required id="email">
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required id="password">
+                <p>By creating an account you agree to our <a href="#">Terms & Conditions.</a></p>
+                <button type="submit" class="btn">Sign Up</button>
+                <div>
+                    <span>Already have an account?</span>
+                    <a href="">Log-In</a>
+                </div>
+              </fieldset>
+          </form>
+          <!-- Log-In Form -->
+          <form id="login" class="none">
+            <fieldset class="container">
+                <h1>Log In</h1>
+                <label for="username"><b>Username</b></label>
+                <input type="text" name="username" placeholder="Enter Username" required id="username">
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required id="password">
+                <button type="submit" class="btn">Log-In</button>
+                <div>
+                    <span>Have'nt joined yet?</span>
+                    <a href="">Sign up</a>
+                </div>
+              </fieldset>
+          </form>
+
+          <!-- Fetch To-do Button -->
+          <button class="fetch none">Fetch To-Dos</button>
+          <button class="sort-ascending none">Sort(A to Z)</button>
+          <button class="sort-desc none">Sort(Z to A)</button>
+          <button class="filter-completed none">Completed ToDos</button>
+          <button class="filter-pending none">Pending ToDos</button>
+          <div class="todo-container none"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+
+
 </body>
 </html>
